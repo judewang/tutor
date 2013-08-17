@@ -1,0 +1,27 @@
+---
+title: adaptive design
+---
+
+.page<
+  header#header
+    h1#logo Hello World!
+    section#sub-title
+      h2 Another Website
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    a#signup[href="#"] SIGNUP
+
+  #main
+    .left
+      - 3.times do
+        article
+          h1= lorem.word
+          p= lorem.paragraph
+    .right
+      - 3.times do
+        article
+          h1= lorem.word
+          p= lorem.paragraph
+
+  footer#footer
+    - 3.times do
+      section: small= truncate(lorem.paragraph, :length => 100)

@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Cross-Browser Support Configuration
+   ========================================================================== */
+//$legacy-support-for-ie:   false;
+//$legacy-support-for-ie6:  $legacy-support-for-ie;
+//$legacy-support-for-ie7:  $legacy-support-for-ie;
+//$legacy-support-for-ie8:  $legacy-support-for-ie;
+//$support-for-original-webkit-gradients: false;
+//$experimental-support-for-opera:        false;
+//$experimental-support-for-khtml:        true;
+$experimental-support-for-svg:            true;
+//$experimental-support-for-pie:          true;
+//$legacy-support-for-mozilla:            false;
+
+/* ==========================================================================
+   Mobile-first layout setting
+   ========================================================================== */
+$container-style: magic;
+$total-columns    : 6;
+$column-width     : 5em;
+$gutter-width     : 1em;
+$grid-padding     : $gutter-width / 2;
+// $container-width  : 960px;
+// $container-width  : 60em;
+
+$ipad-columns     : 8;
+$ipad-break       : 45em; // 720px
+$ipad: $ipad-break $ipad-columns;
+
+$desktop-columns  : 12;
+$desktop-break    : 60em; // 960px
+$desktop: $desktop-break $desktop-columns;
+
+/* ==========================================================================
+   Compass Configuration
+   ========================================================================== */
+$hide-text-direction: right;
+$sprites-layout: smart;
+// @import "pics/*.png";
+// @include all-sprites-sprites;
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+$base-font-size:   16px;
+$base-line-height: 25px;
+
+$headings-font-family: $font-family;
+$headings-font-weight: bold;
+$headings-color: $font-color;
+
+@include establish-baseline;
+
+/* ==|== semantic helper classes ============================================
+   Author: Jude
+   ========================================================================== */
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* ==|== primary style ======================================================
+   Author: Jude
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $font-family;
+  font-weight: 300;
+  color: $font-color; 
+}
+
+a {
+  text-decoration: none;
+  @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

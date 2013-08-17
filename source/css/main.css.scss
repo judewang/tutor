@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@import "compass";
+@import "normalize";
+
+@import "yunicorn";
+@import "susy";
+
+@import "base";
+
+@import "mixins";
+
+//sticky footer init
+// @include sticky-footer(54px, "#root", "#root-push", "#footer");
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  background-color: #ddd;
+}   
+.page {
+  width: 960px;
+  margin: 0 auto; padding: 0 8px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+#header {
+  @extend .clear-fix;
+  padding-top: 8px;
+}
+#logo {
+  width: 224px; height: 80px; float: left;
+  margin: 0 16px 0 0;
+  background: url(http://lorempixel.com/224/80) no-repeat 50% 50%;
+  @include hide-text;
+}
+#sub-title {
+  float: left;
+  width: 224px;
+  margin-right: 16px;
+  h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+#signup {
+  float: right;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: navy;
+}
+#main {
+  @extend .clear-fix;
+}
+.left {
+  width: 464px;
+  float: left;
+  margin-right: 16px;
+}
+.right {
+  width: 464px;
+  float: right;
+}
+article {
+  padding: 8px;
+  background-color: $grayLighter;
+  h1 {font-size: 24px;}
+  p {font-size: 14px;}
+}
+#footer {
+  @extend .clear-fix;
+  padding-top: 8px;
+  section {
+    width: 304px;
+    float: left;
+    margin-right: 16px;
+  }
+  section:last-child {
+    float: right;
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
