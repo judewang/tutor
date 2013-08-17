@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="tw"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="tw"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9" lang="tw"><![endif]-->
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE-edge, chrome=1" http-equiv="X-UA-Compatible" />
+  <title>
+    
+  </title>
+  <meta content="" name="description" />
+  <meta content="human.txt" name="author" />
+  <meta content="" property="og:title" />
+  <meta content="website" property="og:type" />
+  <meta content="" property="og:url" />
+  <meta property="og:image" />
+  <meta content="" property="og:site_name" />
+  <meta content="" property="og:description" />
+  <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+  <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+  <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+  <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+  <link href="favicon.png" rel="shortcut icon" />
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="../css/main.css?1376721084" media="screen" rel="stylesheet" type="text/css" /><!--[if lte IE 8]><link href="../css/ie.css?1376721084" media="screen" rel="stylesheet" type="text/css" /><script src="../js/nwmatcher.js" type="text/javascript"></script>
+  <script src="../js/selectivizr.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+  <!--[if lt IE 8]>
+  <p class="chromeframe">
+    You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/"> upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true"> activate Google Chrome Frame</a>to improve your experience.
+  </p>
+  <![endif]--><h1 id="contributing-to-html5-boilerplate">Contributing to HTML5 Boilerplate</h1>
+
+<p>♥ <a href="http://html5boilerplate.com">HTML5 Boilerplate</a> and want to get involved?
+Thanks! There are plenty of ways you can help!</p>
+
+<h2 id="bugs">Bugs</h2>
+
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the
+repository. Good bug reports are extremely helpful - thank you!</p>
+
+<p>Guidelines for bug reports:</p>
+
+<ol>
+  <li>
+    <p><strong>Use the GitHub issue search</strong> — check if the issue has already been
+reported.</p>
+  </li>
+  <li>
+    <p><strong>Check if the issue has been fixed</strong> — try to reproduce it using the
+latest <code>master</code> branch in the repository.</p>
+  </li>
+  <li>
+    <p><strong>Isolate the problem</strong> — ideally create a <a href="http://css-tricks.com/6263-reduced-test-cases/">reduced test
+case</a> and a live example.</p>
+  </li>
+</ol>
+
+<p>A good bug report shouldn't leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? What would you expect to be the outcome? All these
+details will help people to fix any potential bugs.</p>
+
+<p>Example:</p>
+
+<blockquote>
+  <p>Short and descriptive example bug report title</p>
+
+  <p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+
+  <ol>
+    <li>This is the first step</li>
+    <li>This is the second step</li>
+    <li>Further steps, etc.</li>
+  </ol>
+
+  <p><code>&lt;url&gt;</code> (a link to the reduced test case)</p>
+
+  <p>Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</p>
+</blockquote>
+
+<p><strong><a href="https://github.com/h5bp/html5-boilerplate/issues/">File a bug report</a></strong></p>
+
+<h2 id="pull-requests">Pull requests</h2>
+
+<p>Good pull requests - patches, improvements, new features - are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits. If your contribution involves a significant amount of work or substantial
+changes to any part of the project, please open an issue to discuss it first.</p>
+
+<p>Make sure to adhere to the coding conventions used throughout a project
+(indentation, accurate comments, etc.). Please update any documentation that is
+relevant to the change you're making.</p>
+
+<p>Please follow this process; it's the best way to get your work included in the
+project:</p>
+
+<ol>
+  <li>
+    <p><a href="http://help.github.com/fork-a-repo/">Fork</a> the project, clone your fork,
+and configure the remotes:</p>
+
+    <p><code>bash
+# Clones your fork of the repo into the current directory in terminal
+git clone https://github.com/&lt;your-username&gt;/html5-boilerplate.git
+# Navigate to the newly cloned directory
+cd html5-boilerplate
+# Assigns the original repo to a remote called "upstream"
+git remote add upstream https://github.com/h5bp/html5-boilerplate.git
+</code></p>
+  </li>
+  <li>
+    <p>If you cloned a while ago, get the latest changes from upstream:</p>
+
+    <p><code>bash
+git checkout master
+git pull upstream master
+</code></p>
+  </li>
+  <li>
+    <p>Create a new topic branch to contain your feature, change, or fix:</p>
+
+    <p><code>bash
+git checkout -b &lt;topic-branch-name&gt;
+</code></p>
+  </li>
+  <li>
+    <p>Commit your changes in logical chunks. Please adhere to these <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">git commit
+message
+guidelines</a>
+or your pull request is unlikely be merged into the main project. Use git's
+<a href="https://help.github.com/articles/interactive-rebase">interactive rebase</a>
+feature to tidy up your commits before making them public.</p>
+  </li>
+  <li>
+    <p>Locally merge (or rebase) the upstream development branch into your topic branch:</p>
+
+    <p><code>bash
+git pull [--rebase] upstream master
+</code></p>
+  </li>
+  <li>
+    <p>Push your topic branch up to your fork:</p>
+
+    <p><code>bash
+git push origin &lt;topic-branch-name&gt;
+</code></p>
+  </li>
+  <li>
+    <p><a href="https://help.github.com/articles/using-pull-requests">Open a Pull Request</a> with a
+clear title and description.</p>
+  </li>
+</ol>
+
+<h2 id="do-not">Do not…</h2>
+
+<p>Please <strong>do not</strong> use the issue tracker for personal support requests (use
+<a href="http://stackoverflow.com/questions/tagged/html5boilerplate">StackOverflow</a> or IRC).</p>
+
+<p>Please <strong>do not</strong> derail or troll issues. Keep the
+discussion on topic and respect the opinions of others.</p>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"><\/script>')
+  </script>
+  <script src="../js/main.js?1376721083" type="text/javascript"></script><script type="text/javascript">
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src='//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
